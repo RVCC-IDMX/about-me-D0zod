@@ -12,8 +12,9 @@ h1 {
     font-size: 40pt;
 }
 
-h3 {
+h2 {
     font-size: 25pt;
+    text-decoration: underline;
 }
 
 header {
@@ -44,8 +45,15 @@ header {
 
 /* Hobbies Section */
 
+#hobbies ul li{
+    font-style: italic;
+    font-size: x-large;
+    
+    
+}
+
 #hobbies ul li:first-letter {
-    font-size: 1.5rem
+    font-size: 1.8rem
 
 }
 
@@ -62,11 +70,19 @@ header {
     padding: 0.5rem;
 }
 
+
 /* Gallery Section */
     
 #gallery {
+    font-size: large;
     text-align: center;
-    border: 5px solid #5660BA;
+    border: 5px outset #5660BA;
+    margin-bottom: 2rem;
+}
+
+#gallery hr {
+    border: 1px dotted 
+    
 }
 
 #gallery img {
@@ -75,4 +91,34 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature */
+
+#lit {
+    border: 5px #5660BA;
+    margin-bottom: 2rem;
+}
+
+#lit div {
+    padding: 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+    clear: both;
+}
+
+#lit div p:first-child:first-letter {
+    color: rgb(76, 5, 168);
+    float: left;
+    font-size: 3em;
+    padding: .25em;
+    margin-right: .25em;
+    line-height: .65;
+    border: 3px outset rgb(49, 25, 156);
+    font-family: 'Times New Roman', Times, serif;
+
 }
