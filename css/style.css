@@ -1,19 +1,21 @@
-body{
+body {
     font-family:Kanit;
     background-color: #F3EC70;
     color:#5660BA; 
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
     font-family:"Passion One";
+}
+h1 {
     font-size: 40pt;
 }
 
-header{
+header {
     text-align: center;
 }
 
-#hero, footer{
+#hero, footer {
     color:#2634b1;
     border: 2px solid #5660BA;
     background-color:#85804E;
@@ -21,10 +23,28 @@ header{
     padding:10px;
 }
 
-#hero img{
+#hero img {
     width: 300px;
 }
 
 #bio{
     text-align: center;
 }
+
+#hobbies ul li:first-letter {
+    font-size: 1.5rem
+
+}
+
+#hobbies ul li:nth-child(odd){
+
+    color: #582fc9;
+    padding: 0.5rem;
+} 
+
+#hobbies ul li:nth-child(even){
+
+    color: #4973e6;
+    padding: 0.5rem;
+} 
+    
