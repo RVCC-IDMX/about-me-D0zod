@@ -7,15 +7,24 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family:"Passion One";
 }
+
 h1 {
     font-size: 40pt;
+}
+
+h3 {
+    font-size: 25pt;
 }
 
 header {
     text-align: center;
 }
 
+
+/* Hero Section */
+
 #hero, footer {
+    font-size: larger;
     color:#2634b1;
     border: 2px solid #5660BA;
     background-color:#85804E;
@@ -27,9 +36,13 @@ header {
     width: 300px;
 }
 
+/* Bio Section */
+
 #bio{
     text-align: center;
 }
+
+/* Hobbies Section */
 
 #hobbies ul li:first-letter {
     font-size: 1.5rem
@@ -40,11 +53,26 @@ header {
 
     color: #582fc9;
     padding: 0.5rem;
+    font-size: larger;
 } 
 
 #hobbies ul li:nth-child(even){
 
     color: #4973e6;
     padding: 0.5rem;
-} 
+}
+
+/* Gallery Section */
     
+#gallery {
+    text-align: center;
+    border: 5px solid #5660BA;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
+}
