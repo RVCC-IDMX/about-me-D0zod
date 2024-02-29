@@ -68,13 +68,14 @@ header {
 
     color: #582fc9;
     padding: 0.5rem;
-    font-size: larger;
+    font-size: 1.5rem;
 } 
 
 #hobbies ul li:nth-child(even) {
 
     color: #4973e6;
-    padding: 0.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
 }
 
 
