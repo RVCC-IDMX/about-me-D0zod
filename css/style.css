@@ -1,7 +1,7 @@
 body {
     font-family:Kanit;
-    background-color: #F3EC70;
-    color:#5660BA; 
+    background-color: #faf16f;
+    color:#39428f; 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -15,7 +15,7 @@ h1 {
 h2 {
     font-size: 30pt;
     text-decoration: underline;
-    margin: 1em;
+    margin: .5em;
 }
 
 header {
@@ -28,8 +28,8 @@ header {
 #hero, footer {
     font-size: larger;
     color:#2634b1;
-    border: 2px solid #5660BA;
-    background-color:#85804E;
+    border: 3px solid #5660BA;
+    background-color:#f8ee80;
     text-align: center;
     padding:10px;
 }
@@ -42,6 +42,7 @@ header {
 
 #bio {
     text-align: center;
+    font-size: larger;
 }
 
 /* Hobbies Section */
@@ -55,12 +56,11 @@ header {
 #hobbies ul li {
     font-style: italic;
     font-size: x-large;
-    
-    
+    list-style: square;
 }
 
 #hobbies ul li:first-letter {
-    font-size: 1.8rem
+    font-size: 1.9rem;
 
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 #gallery hr {
-    border: 1px dotted 
+    border: 1px dotted; 
     
 }
 
