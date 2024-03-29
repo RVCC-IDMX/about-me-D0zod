@@ -1,7 +1,7 @@
 body {
     font-family:Kanit;
-    background-color: #faf16f;
-    color:#39428f; 
+    background-color: #ffc67b;
+    color:#20438f; 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -10,6 +10,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-size: 40pt;
+    
 }
 
 h2 {
@@ -27,9 +28,9 @@ header {
 
 #hero, footer {
     font-size: larger;
-    color:#2634b1;
+    color:#000133;
     border: 3px solid #5660BA;
-    background-color:#f8ee80;
+    background-color:#ffb67a;
     text-align: center;
     padding:10px;
 }
@@ -45,6 +46,15 @@ header {
     font-size: larger;
 }
 
+#bio p {
+    color: #000133;
+}
+
+#bio hr {
+    border: 2px outset #5d79f7;
+    max-width: 90%;
+}
+
 /* Hobbies Section */
 
 #hobbies {
@@ -53,22 +63,15 @@ header {
     align-items: center;
 }
 
-#hobbies ul li {
-    font-style: italic;
-    font-size: x-large;
-    list-style: square;
-}
-
 #hobbies ul li:first-letter {
-    font-size: 1.9rem;
-
+    font-size: 1.8rem;
 }
 
 #hobbies ul li:nth-child(odd) {
-
+    list-style: square;
     color: #582fc9;
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 } 
 
 #hobbies ul li:nth-child(even) {
@@ -85,11 +88,13 @@ header {
     font-size: large;
     text-align: center;
     border: 5px outset #5660BA;
+    background-color: #ffb67a;
     margin-bottom: 2rem;
+    align-items: center;   
 }
 
 #gallery hr {
-    border: 1px dotted; 
+    border: 2px outset #5c74ff; 
     
 }
 
@@ -99,6 +104,11 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+#gallery figcaption {
+    font-size: 25px;
+    color: #000133;
 }
 
 /* Literature */
@@ -133,12 +143,51 @@ header {
 
 }
 
+#lit p{
+    color: #211153;
+}
+
+/* Phone Size */
+
+@media screen and (min-width: 20em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    #gallery iframe {
+        max-width: 100%;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div { 
+        max-width: 100%;
+        columns: 20rem;
+    }
+
+}
+
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
+    }
+
+    #gallery iframe {
+        max-width: 100%;
     }
 
     figcaption {
@@ -163,22 +212,40 @@ header {
 /* Large Screen Size */
 
 @media screen and (min-width: 100em) {
+    #bio hr {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    #hobbies li {
+        display: inline-block; 
+        text-decoration: underline;
+    }
+
+    #hobbies div {
+        text-align: center;
+    }
+
     #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
+        max-width: 100%;
     }
 
-hr {
-    display: none;
+    #gallery iframe {
+        max-width: 100%;
+    }
+
+    #gallery hr {
+        display: none;
 }
 
-#gallery h2 {
-    grid-column: 1/-1;
+    #gallery h2 {
+        grid-column: 1/-1;
 }
 
-figure {
-    display: block;
+    figure {
+        display: block;
 
 }
 
