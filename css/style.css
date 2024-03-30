@@ -1,3 +1,4 @@
+/* Body */
 body {
     font-family:Kanit;
     background-color: #ffc67b;
@@ -33,11 +34,13 @@ header {
     background-color:#ffb67a;
     text-align: center;
     padding:10px;
+    margin: auto;
 }
 
 #hero img {
     width: 300px;
 }
+
 
 /* Bio Section */
 
@@ -54,6 +57,7 @@ header {
     border: 2px outset #5d79f7;
     max-width: 90%;
 }
+
 
 /* Hobbies Section */
 
@@ -111,6 +115,7 @@ header {
     color: #000133;
 }
 
+
 /* Literature */
 
 #lit {
@@ -129,6 +134,23 @@ header {
     clear: both;
 }
 
+#lit hr{
+    border: 4px outset #5660BA;
+    max-width: 65%;
+    margin-left: -3%;
+    border-radius: .1rem;
+}
+
+
+#botLit {
+    border: 4px outset #5660BA;
+    max-width: 65%;
+    margin-right: -3%;
+    border-radius: .1rem;
+}
+
+
+
 /* Dropcaps */
 
 #lit div p:first-child:first-letter {
@@ -138,14 +160,75 @@ header {
     padding: .25em;
     margin-right: .25em;
     line-height: .65;
-    border: 3px outset rgb(49, 25, 156);
+    border: 3px outset #31199c;
     font-family: 'Times New Roman', Times, serif;
 
 }
 
-#lit p{
+#lit p {
     color: #211153;
 }
+
+
+/* Contact Form */
+
+#formElements {
+    display: grid;
+    row-gap: .5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+fieldset {
+    border: 3px solid #31199c;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: .5rem;
+}
+
+legend {
+    border: 5px outset #9084ff;
+    background-color: #1b3c94;
+    color: white;
+    padding: .5em;
+    border-radius: .5rem;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: #1b3c94;
+    border: 5px outset #9084ff;
+    color: white;
+    width: 50%;
+    justify-self: center;
+    border-radius: .5rem;
+}
+
+#contact hr {
+    border: 2px solid #04067e;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+/* -------------------------------------------------- */
 
 /* Phone Size & Smaller */
 
@@ -215,7 +298,7 @@ header {
 
 }
 
-/* Large Screen Size */
+/* Larger Screen Sizes */
 
 @media screen and (min-width: 100em) {
     #bio hr {
@@ -255,12 +338,27 @@ header {
 
 }
 
-}
+    #lit hr {
+        display: none;
+    }
 
-/* Contact Form */
+    #lit hr, #botLit {
+        display: none;
+    }
+    
 
-#formElements {
-    display: grid;
+    #contact {
+        max-width: 80%;
+        font-size: larger;
+        background-image: url(/img/avataaars.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #contact button {
+        font-size: 20px;
+    }
+
 }
 
 

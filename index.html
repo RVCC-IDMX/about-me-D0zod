@@ -27,7 +27,7 @@
 
             <div>
                 <p>Dariel Nunez</p>
-                <p>Somerset, NJ</p>
+                <p>New Jersey</p>
             </div>
         </section>
         
@@ -107,6 +107,7 @@
         </section>
 
         <article id="lit">
+            <hr>
 
             <h2>An Exerpt from Dr. Jekyll and Mr. Hyde</h2>
 
@@ -131,12 +132,13 @@
 
 
             </div>
-
         </article>
+
+        <hr id="botLit">
 
         <section id="contact">
 
-            <h2>Contact Me</h2>
+            <h2>Contact Me!</h2>
 
             <form id="contactForm" name="contactForm" method="post" netlify>
 
@@ -145,6 +147,7 @@
                     <legend>Contact Form</legend>
 
                     <div id="formElements">
+
                         <!-- Name -->
                         <label for="name">Name (Required)</label>
                         <input type="text" name="name" id="name" placeholder="Your Name" required>
@@ -168,27 +171,28 @@
 
                         <!-- Message -->
                         <label for="message">Message (Optional)</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a message here if you have any interest in my work, or if you want to just say hello and don't know of any other ways to contact me :D"></textarea>
 
                         <!-- Reply -->
                         <fieldset>
+
                             <legend>Would you like a reply?</legend>
 
                             <ul>
                                 <li>
                                     <input type="radio" name="reply" id="message-yes" value="Yes reply">
-                                    <label for="message-yes"></label>Yes, I'd like a reply.
+                                    <label for="message-yes">Yes, I'd like a reply.</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="reply" id="message-no" value="No reply">
-                                    <label for="message-no"></label>No, thank you.
+                                    <label for="message-no">No, thank you.</label>
                                 </li>
                             </ul>
+
                         </fieldset>
 
                         <!-- Submit -->
-                        <button type="submit">Send</button>
-
+                        <button type="submit">Submit</button>
 
                     </div>
 
