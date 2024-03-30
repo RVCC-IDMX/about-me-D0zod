@@ -11,12 +11,16 @@
 
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
+
         <img src="img/logo-96X96.svg" alt="blue origami logo">
         <h1>Web Dev I</h1>
+
     </header>
+
     <main>
         <section id="hero">
             <img src="img/avataaars.png" alt="avatar picture of me">
@@ -40,6 +44,7 @@
                 <p><a href="https://www.artstation.com/pranetoid">Artist I'm currently studying</a></p>
 
             </div>
+
             <hr>
 
         </section>
@@ -61,6 +66,7 @@
             <div>
 
         </section>
+
         <hr>
 
         <section id="gallery">
@@ -127,6 +133,70 @@
             </div>
 
         </article>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+                        <!-- Name -->
+                        <label for="name">Name (Required)</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        
+                        <!-- Email -->
+                        <label for="email">Email (Required)</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                        <!-- Phone -->
+                        <label for="tel">Phone (Optional)</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone">
+
+                        <!-- Phone Type -->
+                        <label for="phonetype">Phone Type (Optional)</label>
+                        <select name="phonetype" id="phonetype">
+                            <option value="" selected>Select Phone Type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Home</option>
+                            <option value="Home">Work</option>
+                        </select>
+
+                        <!-- Message -->
+                        <label for="message">Message (Optional)</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <!-- Reply -->
+                        <fieldset>
+                            <legend>Would you like a reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" name="reply" id="message-yes" value="Yes reply">
+                                    <label for="message-yes"></label>Yes, I'd like a reply.
+                                </li>
+                                <li>
+                                    <input type="radio" name="reply" id="message-no" value="No reply">
+                                    <label for="message-no"></label>No, thank you.
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <!-- Submit -->
+                        <button type="submit">Send</button>
+
+
+                    </div>
+
+                </fieldset>
+                
+            </form>
+
+        </section>
 
     </main>
 
