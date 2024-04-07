@@ -1,4 +1,6 @@
+
 /* Body */
+
 body {
     font-family:Kanit;
     background-color: #ffc67b;
@@ -150,7 +152,6 @@ header {
 }
 
 
-
 /* Dropcaps */
 
 #lit div p:first-child:first-letter {
@@ -267,6 +268,7 @@ legend {
 
 }
 
+
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
@@ -297,6 +299,7 @@ legend {
     }
 
 }
+
 
 /* Larger Screen Sizes */
 
@@ -346,7 +349,6 @@ legend {
         display: none;
     }
     
-
     #contact {
         max-width: 80%;
         font-size: larger;
