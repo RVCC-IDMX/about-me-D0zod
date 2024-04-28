@@ -4,7 +4,7 @@
 body {
     font-family:Kanit;
     background-color: #ffc67b;
-    color:#20438f; 
+    color:#153885; 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -82,7 +82,7 @@ header {
 
 #hobbies ul li:nth-child(even) {
 
-    color: #4973e6;
+    color: #002aa5;
     font-size: 1.3rem;
     padding: 1rem;
 }
