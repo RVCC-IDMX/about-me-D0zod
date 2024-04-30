@@ -26,6 +26,11 @@ header {
     text-align: center;
 }
 
+.logo img {
+    padding: 1rem;
+    max-height: 55%;
+}
+
 
 /* Hero Section */
 
@@ -234,6 +239,15 @@ legend {
 /* Phone Size & Smaller */
 
 @media screen and (min-width: 0em) {
+    .logo img{
+        max-height: 5vw;
+        max-width: 9vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+    
     #hero img {
         max-width: 100%;
     }
@@ -272,6 +286,15 @@ legend {
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
+    .logo img{
+        max-height: 5vw;
+        max-width: 9vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+    
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -304,6 +327,15 @@ legend {
 /* Larger Screen Sizes */
 
 @media screen and (min-width: 100em) {
+    .logo img{
+        max-height: 2vw;
+        max-width: 3vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+    
     #bio hr {
         margin-top: 3rem;
         margin-bottom: 1rem;
