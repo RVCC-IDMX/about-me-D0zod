@@ -55,6 +55,6 @@ No citations needed. All works and assets are my own.
 
 ---
 
-[logo]: /img/DN%20Logo.svg
+[logo]: /img/DN-Logo.svg
 [screenshot]: img/color-scheme-sc640w.png
 [netstat]: https://api.netlify.com/api/v1/badges/98cec88d-2e9d-4af2-b3ce-582710bb6a33/deploy-status
