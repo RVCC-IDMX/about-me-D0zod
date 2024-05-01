@@ -8,6 +8,9 @@
 ---
 
 ## Project Description
+
+Hi! I'm Dariel Nunez. I'm 21, currently enrolled at RVCC as an IT major, and I *think* I like coding. It can be pretty fun at times but also pretty tedious when you can't figure out what's wrong. Either way, here's my project description!
+
 The purpose of this project was to slowly learn and improve my skills at building a website using HTML5 and CSS in a college course. I learned a variety of things in the 14 weeks we had, such as:
 
   * Setting up and navigating VSCode.
@@ -24,7 +27,7 @@ The purpose of this project was to slowly learn and improve my skills at buildin
 
   * Learning how to properly code my website to be responsive and as accessible as possible to a variety of devices as well as disabilities.
 
-  * Creating a new mini project site to further challenge my knowledge of HTML and CSS
+  * Creating a new mini project site to further challenge my knowledge of HTML and CSS.
 
   * How to embed videos, photos, and music into my site using a handful of methods.
 
@@ -32,16 +35,16 @@ The purpose of this project was to slowly learn and improve my skills at buildin
 
   * Creating a navigation bar for my website.
 
+
 ---
 
 ## Project Colors
 The main colors of my project consist of these values: 
-```
+
   * 
   * 
   * 
   * 
-```
 
 And an example screenshot: ![screenshot of my website][screenshot]
 
