@@ -38,7 +38,7 @@ header {
     font-size: larger;
     color:#000133;
     border: 3px solid #5660BA;
-    background-color:#ffb67a;
+    background-color:#fad483;
     text-align: center;
     padding:10px;
     margin: auto;
@@ -55,8 +55,8 @@ header {
     text-align: center;
     font-size: larger;
     word-wrap: normal;
-    border: #000133 dotted;
-    background-color: #f3d2a6;
+    border: #5660BA solid;
+    background-color: #fad483;
     margin: 5rem;
 }
 
@@ -68,9 +68,10 @@ header {
     text-align: center;
     align-items: center;
     max-width: 60%;
+    border: 2px #5660BA dashed;
     margin: auto;
     margin-bottom: 5%;
-    background-color: #f0ba8e;
+    background-color: #fad483;
     padding: 1%;
     padding-bottom: 7%;
 }
@@ -79,10 +80,6 @@ header {
     max-width: 50%;
 }
 
-.beforehobby {
-    border: 2px outset #5d79f7;
-    max-width: 90%;
-}
 
 /* Hobbies Section */
 
@@ -90,6 +87,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px #5660BA outset;
+    background-color: #fad483;
+    margin-bottom: 3%;
 }
 
 #hobbies ul li:first-letter {
@@ -118,7 +118,7 @@ header {
     font-size: large;
     text-align: center;
     border: 5px outset #5660BA;
-    background-color: #ffb67a;
+    background-color: #fad483;
     margin-bottom: 2rem;
     align-items: center;   
 }
@@ -278,6 +278,10 @@ legend {
         margin: 5%;
     }
 
+    .artist {
+        max-width: 100%;
+    }
+
     .artist img {
         max-width: 80%;
     }
@@ -434,16 +438,16 @@ legend {
 
     #gallery hr {
         display: none;
-}
+    }
 
     #gallery h2 {
         grid-column: 1/-1;
-}
+    }
 
     figure {
         display: block;
 
-}
+    }
 
     #lit hr {
         display: none;
