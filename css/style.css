@@ -54,17 +54,35 @@ header {
 #bio {
     text-align: center;
     font-size: larger;
+    word-wrap: normal;
+    border: #000133 dotted;
+    background-color: #f3d2a6;
+    margin: 5rem;
 }
 
 #bio p {
     color: #000133;
 }
 
-#bio hr {
+.artist {
+    text-align: center;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #f0ba8e;
+    padding: 1%;
+    padding-bottom: 7%;
+}
+
+.artist img {
+    max-width: 50%;
+}
+
+.beforehobby {
     border: 2px outset #5d79f7;
     max-width: 90%;
 }
-
 
 /* Hobbies Section */
 
@@ -91,6 +109,7 @@ header {
     font-size: 1.3rem;
     padding: 1rem;
 }
+
 
 
 /* Gallery Section */
@@ -247,6 +266,21 @@ legend {
     .logo {
         font-size: 100%;
     }
+
+    #bio {
+        margin: 1rem;
+        margin-top: 5%;
+        margin-bottom: 1rem;
+        
+    }
+
+    #bio p {
+        margin: 5%;
+    }
+
+    .artist img {
+        max-width: 80%;
+    }
     
     #hero img {
         max-width: 100%;
@@ -294,6 +328,26 @@ legend {
     .logo {
         font-size: 100%;
     }
+
+    .artist {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding: 5%;
+        margin-left: 1rem;
+        margin: auto;
+    }
+
+    .artist h3 {
+        font-size: 25pt;
+    }
+
+    .artist img {
+        max-width: 60%;
+        margin: 3%;
+    }
     
     figure {
         display: grid;
@@ -335,10 +389,28 @@ legend {
     .logo {
         font-size: 100%;
     }
+
+    #bio p {
+        margin: 2%;
+        margin-left: 10%;
+        margin-right: 12%;
+        text-align: center;
+    }
     
     #bio hr {
         margin-top: 3rem;
         margin-bottom: 1rem;
+    }
+
+    .artist {
+        margin: auto;
+        max-width: 60%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .artist img {
+        max-width: 30%;
     }
     
     #hobbies li {

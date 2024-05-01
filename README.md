@@ -51,7 +51,7 @@ And an example screenshot: ![screenshot of my website][screenshot]
 ---
 
 ## Citations
-No citations needed. All works and assets are my own.
+Image link: https://www.artstation.com/artwork/lDVG1G
 
 ---
 
