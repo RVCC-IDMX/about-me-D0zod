@@ -41,10 +41,10 @@ The purpose of this project was to slowly learn and improve my skills at buildin
 ## Project Colors
 The main colors of my project consist of these values: 
 
-  * 
-  * 
-  * 
-  * 
+  * `#ffc67b`
+  * `#fad483`
+  * `#153885`
+  * `#5d2fc5`
 
 And an example screenshot: ![screenshot of my website][screenshot]
 
