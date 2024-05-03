@@ -11,6 +11,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/DNfavicons/favicon-96x96.png">
 </head>
 
 <body>
@@ -18,14 +19,23 @@
     <header>
        <nav class="navbar">
         <div class="logo">
-            <img src="img/logo-96X96.svg" alt="blue origami logo">
+            <img src="img/DN-Logo.png" alt="Logo I designed using my initials">
             <h1>Web Dev I</h1>
         </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-button">
+
+            <span></span>
+    
+           </label>
+
         <div class="navbar-links">
             <ul>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#lit">Blog</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
@@ -35,7 +45,7 @@
 
     <main>
         <section id="hero">
-            <img src="img/avataaars.png" alt="avatar picture of me">
+            <img src="img/avataaars.png" alt="avatar caricature of me">
 
             <div>
                 <p>Dariel Nunez</p>
@@ -49,17 +59,30 @@
             
             <div>
 
-                <p>I want to be...</p>
+                <p>
+                    Hey! My name is Dariel, and welcome to my site. I appreciate you checking it out.
+                </p>
                 
-                <p>Beefier and more confident</p>
+                <p>
+                    I'm 21, I have two cats, and I want to get HUGE. I love lifting, sprinting (not as much after bulking lol), and I can't wait to get back in the gym and into my hobbies after finals. I love all things VR/AR/MR, computers, art, language, and way more than I should bother explaining. I promise I'm not just filling this out for the word count. ;D 
+                </p>
 
-                <p><a href="https://www.artstation.com/pranetoid">Artist I'm currently studying</a></p>
+                <p>
+                    While I haven't been able to keep up with most of my hobbies lately, I have been able to still mess around with one. Drawing! I love drawing and I love appreciating awesome artists. Below you'll find an artist I'm currently studying, and I'm hoping I can eventually emulate their amazing lighting techniques and sense of sheer scale into my own art!
+                </p>
 
             </div>
 
-            <hr>
-
         </section>
+
+        <div class="art-hobby-container">
+
+        <div class="artist">
+            <h3><a href="https://www.artstation.com/pranetoid">Artist I'm currently studying -></a></h3>
+
+            <img src="https://cdna.artstation.com/p/assets/images/images/059/674/620/large/astero-20220821ans.jpg?1676912573" alt="a painting by the artist I'm studying">
+
+        </div>
         
         <section id="hobbies">
 
@@ -75,11 +98,14 @@
                 <li>ASL Studies - I love learning ASL, it's so much fun!</li>
                 <li>Sleeping - With how much I love sleeping, I consider myself a quality sleep hobbyist, alongside my cat.</li>
             </ul>
-            <div>
+
+            
+
+            </div>
+
+        </div>
 
         </section>
-
-        <hr>
 
         <section id="gallery">
 
@@ -118,35 +144,56 @@
 
         </section>
 
-        <article id="lit">
+        <article id="blog">
             <hr>
 
-            <h2>An Exerpt from Dr. Jekyll and Mr. Hyde</h2>
+            <div class="blog-title">
+
+            <h2>Blog: CSS Animations</h2>
+
+            </div>
 
             <div>
 
 
-                <p>“I beg your pardon, Dr. Lanyon,” he replied civilly enough. “What you say is very well founded; and my impatience has shown its heels to my politeness. I come here at the instance of your colleague, Dr. Henry Jekyll, on a piece of business of some moment; and I understood...” He paused and put his hand to his throat, and I could see, in spite of his collected manner, that he was wrestling against the approaches of the hysteria--“I understood, a drawer...”</p>
+                <p>Hey! In this mini article thingy I'm going to go into a couple different CSS animations that I found really cool. CSS styling equips webpages with some powerful tools and abilities to make their websites look stunning, functional, fun, or whatever need be.</p>
 
-                <p>But here I took pity on my visitor’s suspense, and some perhaps on my own growing curiosity.</p>
+                <p>CSS animations are one of those tools, and they allow for some unexpectedly cool features, like the title above this paragraph!. It's surprising what you can accomplish with CSS alone. None of these animations will have a lick of js! First on the list: <p style="text-decoration: underline;">Scroll Animations!</p></p>
 
-                <p>“There it is, sir,” said I, pointing to the drawer, where it lay on the floor behind a table and still covered with the sheet.</p>
+                <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="eYXPvaa" data-user="santoshsinghchauhan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/santoshsinghchauhan/pen/eYXPvaa">
+                    CSS-Only Scroll-Driven Animations</a> by Santosh Singh Chauhan (<a href="https://codepen.io/santoshsinghchauhan">@santoshsinghchauhan</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-                <p>He sprang to it, and then paused, and laid his hand upon his heart: I could hear his teeth grate with the convulsive action of his jaws; and his face was so ghastly to see that I grew alarmed both for his life and reason.</p>
+                <p>This first source I found comes from <a href="https://codepen.io/santoshsinghchauhan">Santosh Singh Chauhan!</a> This codepen shows off a variety of different css-only animations that look really cool as you scroll by. These are great for adding some extra flare to any site, and I personally like the fade left and right, and the zoom out ones myself.</p>
 
-                <p>“Compose yourself,” said I.</p>
+                <p>Next up: <p style="text-decoration: underline;">An animated turntable!</p>
 
-                <p>He turned a dreadful smile to me, and as if with the decision of despair, plucked away the sheet. At sight of the contents, he uttered one loud sob of such immense relief that I sat petrified. And the next moment, in a voice that was already fairly well under control, “Have you a graduated glass?” he asked.</p>
+                <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="ExJzMXK" data-user="pyxofy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/pyxofy/pen/ExJzMXK">
+                    CSS Animation - Turntable</a> by Pyxofy (<a href="https://codepen.io/pyxofy">@pyxofy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-                <p>I rose from my place with something of an effort and gave him what he asked.</p>
+                <p>Courtesy of <a href="https://codepen.io/pyxofy">Pyxofy</a>, this animation along with its pristine looking code is extremely polished, and in my eyes has so much potential. The first idea I had was to try and recode it such that instead of playing on an infinite loop, it can be interacted with and play music when you move the arm onto the disc! It's a testament to how versatile CSS is, and is unreal in its polish. </p>
 
-                <p>He thanked me with a smiling nod, measured out a few minims of the red tincture and added one of the powders. The mixture, which was at first of a reddish hue, began, in proportion as the crystals melted, to brighten in colour, to effervesce audibly, and to throw off small fumes of vapour. Suddenly and at the same moment, the ebullition ceased and the compound changed to a dark purple, which faded again more slowly to a watery green. My visitor, who had watched these metamorphoses with a keen eye, smiled, set down the glass upon the table, and then turned and looked upon me with an air of scrutiny.</p>
+                <p>Lastly, we have a simple but clean interactive selection animation! By <a href="https://codepen.io/verse_">verse_</a>.</p>
+                <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="NWmOVEr" data-user="verse_" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/verse_/pen/NWmOVEr">
+                    lines</a> by AB (<a href="https://codepen.io/verse_">@verse_</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+                  <p>This one has a ton of radio type lines that open up when clicked. This could be used for a digital bookshelf or maybe even a record disc collection. I could also see this being used for something like an art portfolio, and when you hover over one, it shows a mini preview and a date, somehting like that. Overall this one is extremely well made and I wish I had more time to add all of these into my site here and tinkered around with ways to get them to do what I would want.</p>
 
             </div>
         </article>
 
-        <hr id="botLit">
+        <hr id="botblog">
 
         <section id="contact">
 
@@ -158,11 +205,11 @@
 
                     <legend>Contact Form</legend>
 
-                    <div id="formElements">
+                    <div id="formElements" class="contact-container">
 
                         <!-- Name -->
                         <label for="name">Name (Required)</label>
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="form-input">
                         
                         <!-- Email -->
                         <label for="email">Email (Required)</label>
@@ -218,8 +265,9 @@
 
     <footer>
 
-        ©2024 - Dariel Nunez
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://about-me-d0zod.netlify.app/">About Me: Dariel Nunez</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/D0zod">Dariel Nunez</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
+        https://github.com/RVCC-IDMX/about-me-D0zod/
     </footer>
 </body>
 </html>

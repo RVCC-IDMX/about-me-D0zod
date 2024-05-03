@@ -26,6 +26,11 @@ header {
     text-align: center;
 }
 
+.logo img {
+    padding: 1rem;
+    max-height: 55%;
+}
+
 
 /* Hero Section */
 
@@ -33,7 +38,7 @@ header {
     font-size: larger;
     color:#000133;
     border: 3px solid #5660BA;
-    background-color:#ffb67a;
+    background-color:#fad483;
     text-align: center;
     padding:10px;
     margin: auto;
@@ -49,24 +54,42 @@ header {
 #bio {
     text-align: center;
     font-size: larger;
+    border: #5660BA solid;
+    background-color: #fad483;
+    margin: 5rem;
 }
 
 #bio p {
     color: #000133;
 }
 
-#bio hr {
-    border: 2px outset #5d79f7;
-    max-width: 90%;
+
+/* Artist & Hobbies Section */
+
+.artist {
+    text-align: center;
+    align-items: center;
+    max-width: 60%;
+    border: 2px #5660BA dashed;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #fad483;
+    padding: 1%;
+    padding-bottom: 7%;
 }
 
+.artist img {
+    max-width: 50%;
+}
 
-/* Hobbies Section */
 
 #hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px #5660BA dashed;
+    background-color: #fad483;
+    margin-bottom: 3%;
 }
 
 #hobbies ul li:first-letter {
@@ -87,14 +110,21 @@ header {
     padding: 1rem;
 }
 
+.art-hobby-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+
 
 /* Gallery Section */
+/* Had plans to make the images grow when you hovered over them, and went fullscreen when you clicked on them. */
     
 #gallery {
     font-size: large;
     text-align: center;
     border: 5px outset #5660BA;
-    background-color: #ffb67a;
+    background-color: #fad483;
     margin-bottom: 2rem;
     align-items: center;   
 }
@@ -118,25 +148,34 @@ header {
 }
 
 
-/* Literature */
+/* Blog Section */
 
-#lit {
+ /* Keyframe animation for title color change */
+ @keyframes colorChange {
+    0% { color: #bb0000; } /* Red */
+    25% { color: #009100; } /* Green */
+    50% { color: #1300c2; } /* Blue */
+    75% { color: #c700c7; } /* Magenta */
+    100% { color: #bdbd00; } /* Gold */
+}
+
+.blog-title h2 {
+    animation: colorChange 5s infinite alternate;
+    display: contents;
+}
+
+#blog {
     border: 5px #5660BA;
     margin-bottom: 2rem;
 }
 
-#lit div {
-    padding: 1rem;
-    max-width: 40rem;
-    margin: 0 auto;
-}
 
-#lit div p {
+#blog div p {
     padding: 0.3rem 0;
     clear: both;
 }
 
-#lit hr{
+#blog hr {
     border: 4px outset #5660BA;
     max-width: 65%;
     margin-left: -3%;
@@ -144,30 +183,11 @@ header {
 }
 
 
-#botLit {
+#botblog {
     border: 4px outset #5660BA;
     max-width: 65%;
     margin-right: -3%;
     border-radius: .1rem;
-}
-
-
-/* Dropcaps */
-
-#lit div p:first-child:first-letter {
-    color: rgb(76, 5, 168);
-    float: left;
-    font-size: 3em;
-    padding: .25em;
-    margin-right: .25em;
-    line-height: .65;
-    border: 3px outset #31199c;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-#lit p {
-    color: #211153;
 }
 
 
@@ -204,6 +224,53 @@ legend {
     font-size: 1rem;
 }
 
+/* I have yet to get this working. It was an idea for an animated input bar where the text "name", for example, would move when you clicked the input area. */
+
+/* Referenced from https://github.com/Ritika-Agrawal811/css-and-js-code-snippets/blob/main/Form%20Fields/Label_Animation/style.css*/
+
+/* 
+.contact-container  {
+    position: relative;
+}
+
+.form-input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    color: whitesmoke;
+    padding-left: 1em;
+  }
+
+  label {
+    position: absolute;
+    background: #333;
+    color: #whitesmoke;
+    left: 1em;
+    top: 0.75em;
+    cursor: text;
+    transition:
+      top 350ms ease-in,
+      font-size 350ms ease-in;
+  }
+
+  .form-input:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .form-input:focus {
+    border: 2px solid #whitesmoke;
+  }
+  
+  .form-input:focus ~ label,
+  .form-input:not(:placeholder-shown).form__input:not(:focus) ~ label {
+    top: -0.5em;
+    font-size: 0.75rem;
+    padding: 0 0.125em;
+  }
+   */
+
 #contact ul {
     list-style: none;
     padding: 0px;
@@ -234,6 +301,43 @@ legend {
 /* Phone Size & Smaller */
 
 @media screen and (min-width: 0em) {
+    .logo img{
+        max-height: 5vw;
+        max-width: 9vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+
+    #bio {
+        margin: 1rem;
+        margin-top: 5%;
+        margin-bottom: 1rem;
+        
+    }
+
+    #bio p {
+        margin: 5%;
+    }
+
+    .artist {
+        max-width: 100%;
+    }
+
+    .artist h3 {
+        font-size: 3vw;
+    }
+
+    .artist img {
+        max-width: 80%;
+    }
+
+    .art-hobby-container {
+        display: inline-block;
+        margin: 6%;
+    }
+    
     #hero img {
         max-width: 100%;
     }
@@ -261,9 +365,8 @@ legend {
         width: 100%;
     }
 
-    #lit div { 
-        max-width: 100%;
-        columns: 20rem;
+    .blog-title {
+        display: contents;
     }
 
 }
@@ -272,6 +375,41 @@ legend {
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
+    .logo img{
+        max-height: 5vw;
+        max-width: 9vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+
+    .art-hobby-container {
+        display: inline-block;
+        margin: 3%;
+    }
+
+    .artist {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding: 5%;
+        margin-left: 1rem;
+        margin: auto;
+        margin-bottom: 6%;
+    }
+
+    .artist h3 {
+        font-size: 25pt;
+    }
+
+    .artist img {
+        max-width: 60%;
+        margin: 3%;
+    }
+    
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -293,20 +431,49 @@ legend {
         width: 100%;
     }
 
-    #lit div { 
-        max-width: 100%;
-        columns: 20rem;
+    .blog-title {
+        display: contents;
     }
-
 }
 
 
 /* Larger Screen Sizes */
 
 @media screen and (min-width: 100em) {
+    .logo img{
+        max-height: 2vw;
+        max-width: 3vw;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+
+    #bio p {
+        margin: 2%;
+        margin-left: 10%;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
     #bio hr {
         margin-top: 3rem;
         margin-bottom: 1rem;
+    }
+
+    .art-hobby-container{
+        display: flex;
+    }
+
+    .artist {
+        margin: auto;
+        max-width: 60%;
+        margin-top: 0%;
+        margin-bottom: 3%;
+    }
+
+    .artist img {
+        max-width: 40%;
     }
     
     #hobbies li {
@@ -330,22 +497,26 @@ legend {
 
     #gallery hr {
         display: none;
-}
+    }
 
     #gallery h2 {
         grid-column: 1/-1;
-}
+    }
 
     figure {
         display: block;
 
-}
-
-    #lit hr {
-        display: none;
     }
 
-    #lit hr, #botLit {
+    .blog-title {
+        display: contents;
+    }
+
+    #blog p {
+        font-size: larger;
+    }
+
+    #blog hr, #botblog {
         display: none;
     }
     
