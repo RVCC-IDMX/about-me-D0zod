@@ -54,7 +54,6 @@ header {
 #bio {
     text-align: center;
     font-size: larger;
-    word-wrap: normal;
     border: #5660BA solid;
     background-color: #fad483;
     margin: 5rem;
@@ -119,6 +118,7 @@ header {
 
 
 /* Gallery Section */
+/* Had plans to make the images grow when you hovered over them, and went fullscreen when you clicked on them. */
     
 #gallery {
     font-size: large;
@@ -148,7 +148,7 @@ header {
 }
 
 
-/* Blog */
+/* Blog Section */
 
  /* Keyframe animation for title color change */
  @keyframes colorChange {
@@ -156,10 +156,10 @@ header {
     25% { color: #009100; } /* Green */
     50% { color: #1300c2; } /* Blue */
     75% { color: #c700c7; } /* Magenta */
-    100% { color: #bdbd00; } /* Yellow */
+    100% { color: #bdbd00; } /* Gold */
 }
 
-  .blog-title h2 {
+.blog-title h2 {
     animation: colorChange 5s infinite alternate;
     display: contents;
 }
@@ -169,11 +169,6 @@ header {
     margin-bottom: 2rem;
 }
 
-#blog div {
-    padding: 1rem;
-    max-width: 40rem;
-    margin: 0 auto;
-}
 
 #blog div p {
     padding: 0.3rem 0;
@@ -193,25 +188,6 @@ header {
     max-width: 65%;
     margin-right: -3%;
     border-radius: .1rem;
-}
-
-
-/* Dropcaps */
-
-#blog div p:first-child:first-letter {
-    color: rgb(76, 5, 168);
-    float: left;
-    font-size: 3em;
-    padding: .25em;
-    margin-right: .25em;
-    line-height: .65;
-    border: 3px outset #31199c;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-#blog p {
-    color: #211153;
 }
 
 
@@ -247,6 +223,53 @@ legend {
     padding: .5em;
     font-size: 1rem;
 }
+
+/* I have yet to get this working. It was an idea for an animated input bar where the text "name", for example, would move when you clicked the input area. */
+
+/* Referenced from https://github.com/Ritika-Agrawal811/css-and-js-code-snippets/blob/main/Form%20Fields/Label_Animation/style.css*/
+
+/* 
+.contact-container  {
+    position: relative;
+}
+
+.form-input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    color: whitesmoke;
+    padding-left: 1em;
+  }
+
+  label {
+    position: absolute;
+    background: #333;
+    color: #whitesmoke;
+    left: 1em;
+    top: 0.75em;
+    cursor: text;
+    transition:
+      top 350ms ease-in,
+      font-size 350ms ease-in;
+  }
+
+  .form-input:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .form-input:focus {
+    border: 2px solid #whitesmoke;
+  }
+  
+  .form-input:focus ~ label,
+  .form-input:not(:placeholder-shown).form__input:not(:focus) ~ label {
+    top: -0.5em;
+    font-size: 0.75rem;
+    padding: 0 0.125em;
+  }
+   */
 
 #contact ul {
     list-style: none;
@@ -346,11 +369,6 @@ legend {
         display: contents;
     }
 
-    #blog div { 
-        max-width: 100%;
-        columns: 20rem;
-    }
-
 }
 
 
@@ -416,12 +434,6 @@ legend {
     .blog-title {
         display: contents;
     }
-
-    #blog div { 
-        max-width: 100%;
-        columns: 20rem;
-    }
-
 }
 
 
@@ -500,8 +512,8 @@ legend {
         display: contents;
     }
 
-    #blog hr {
-        display: none;
+    #blog p {
+        font-size: larger;
     }
 
     #blog hr, #botblog {

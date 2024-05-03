@@ -18,7 +18,7 @@ The purpose of this project was to slowly learn and improve my skills at buildin
 
 * Understanding the languages I'd be using throughout the course, HTML5 and CSS.
 
-* Familiarizing myself with HMTL and creating small projects to bolster my knowledge.
+* Familiarizing myself with HTML and creating small projects to bolster my knowledge.
 
 * Learning about and setting up a GitHub account, learning to create repositories and how they work, what CPR is, and how to properly format my code for legibility.
 
@@ -53,8 +53,10 @@ And an example screenshot: ![screenshot of my website][screenshot]
 
 ## Citations
 
-Image link: <https://www.artstation.com/artwork/lDVG1G>
-
+Direct image link for artist I'm studying: <https://www.artstation.com/artwork/lDVG1G>
+First codepen: https://codepen.io/santoshsinghchauhan/pen/eYXPvaa
+Second codepen: https://codepen.io/pyxofy/pen/ExJzMXK
+Third codepen: https://codepen.io/verse_/pen/NWmOVEr 
 ---
 
 ## License
@@ -63,6 +65,6 @@ Image link: <https://www.artstation.com/artwork/lDVG1G>
 
 ---
 
-[logo]: /img/DN-Logo.svg
+[logo]: /img/DN-Logo.png
 [screenshot]: img/color-scheme-sc640w.png
 [netstat]: https://api.netlify.com/api/v1/badges/98cec88d-2e9d-4af2-b3ce-582710bb6a33/deploy-status

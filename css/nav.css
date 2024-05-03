@@ -31,7 +31,47 @@ main {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    text-align: left;
+    width: 100%;
 }
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-button {
+    align-self: end;
+    margin-left: 1rem;
+    height: 20px;
+    display: flex;
+    padding-right: 20%;
+}
+
+.nav-toggle-button span,
+.nav-toggle-button span::before,
+.nav-toggle-button span::after {
+    display: block;
+    background: whitesmoke;
+    height: 3px;
+    width: 40px;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.nav-toggle-button span::before,
+.nav-toggle-button span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-button span::before {
+    bottom: 8px;
+}
+
+.nav-toggle-button span::after {
+    top: 8px;
+}
+
 
 /* logo */
 
@@ -51,17 +91,22 @@ main {
 
 /* navigation list */
 
-.navbar-links li {
-    list-style: none;
-    display: block;
-    padding: 0.5em 0;
-}
-
 .navbar-links {
     align-items: end;
 }
 
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0.5em 0;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
 
+.navbar-links li {
+    margin-bottom: 1em;
+}
 
 /*  
  style all a tags in header 
@@ -86,6 +131,10 @@ main {
     outline: none;
 }
 
+.nav-toggle:checked ~ .navbar-links ul {
+    display: block;
+    transform: scale(1,1);
+}
 
 
 /* 
@@ -94,6 +143,34 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
+
+/* Smaller Screen Sizes */
+
+
+/* Tablet Size */
+
+@media screen and (min-width: 60em) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        justify-content: space-between;
+        transform: scale(1,1);
+        transition: transform 1ms ease-in-out;
+    }
+
+    .nav-toggle, .nav-toggle-button {
+        display: none;
+    }
+
+}
+
+
+
+/* Larger Screen Sizes */
 @media screen and (min-width: 60rem) {
     .navbar {
         flex-direction: row;
@@ -103,6 +180,12 @@ such that no text wraps
     .navbar-links ul {
         display: flex;
         justify-content: space-between;
+        transform: scale(1,1);
+        transition: transform 1ms ease-in-out;
+    }
+
+    .nav-toggle, .nav-toggle-button {
+        display: none;
     }
 
 }
